@@ -19,15 +19,15 @@ int main()
     // Syntex For Insertion Sort
     for(int i=1; i<n; i++)
     {
-        int current = arr[i];
+        int temp = arr[i];
         int j = i-1;
 
-        while(arr[j]>current && j>=0)
+        while(arr[j] > temp   &&   j >= 0)
         {
-            arr[j+1]=arr[j];
-            j--;
+            arr[j+1] = arr[j];
+            j--; // j=i-1
         }
-        arr[j+1]=current;
+        arr[j+1] = temp;
     }
 
      cout<<"Sorted Array : ";
