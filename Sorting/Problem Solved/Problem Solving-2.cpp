@@ -1,3 +1,5 @@
+//Write a code to sort an array in insertion sort and count the number of swaps and comparisons.
+
 #include<iostream>
 #include<conio.h>
 
