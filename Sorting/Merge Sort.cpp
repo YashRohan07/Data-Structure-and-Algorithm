@@ -10,10 +10,12 @@ void merge(int arr[], int left, int mid, int right)
 
     while (i <= mid && j <= right)
     {
-        if(arr[i] <= arr[j]) {
+        if(arr[i] <= arr[j]) 
+        {
             temp[k] = arr[i];
             i++;
         }
+        
         else{
             temp[k] = arr[j];
             j++;
@@ -41,15 +43,8 @@ void merge(int arr[], int left, int mid, int right)
         arr[i] = temp[i-left];
     }
 
-    /*
-       The loop you are asking about copies the merged elements from the temporary array
-       "temp" back into the original array "arr". The index "left" is the starting index of the left
-       subarray, and the index "i" represents the index of the current element being copied from
-       "temp" back into "arr". Therefore, "arr[left + i]" is the correct index in "arr"
-       to copy the current element from "temp".
-    */
-
 }
+
 
 // Divide Part
 void mergeSort(int arr[], int left, int right)
