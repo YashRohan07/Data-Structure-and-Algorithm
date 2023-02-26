@@ -15,16 +15,16 @@ int BinarySearch(int Array[], int n, int key)
         mid = (left+right)/2;
         if(Array[mid] == key)
         {
-            return mid;
+            return mid;       //If the item to be searched is present at middle
         }
 
         else if(Array[mid] < key)
         {
-            left = mid + 1;
+            left = mid + 1;        //If the item to be searched is greater than mid, then it can only be in right subarray.
         }
 
         else{
-            right = mid - 1;
+            right = mid - 1;       //If the item to be searched is less than mid, then it can only be in left subarray.
         }
     }
         return -1;
